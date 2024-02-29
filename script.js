@@ -4,17 +4,23 @@ function toggleMenu() {
   menu.classList.toggle("open");
   icon.classList.toggle("open");
 }
-function show(shown, hidden, navbar) {
+function show(shown, hidden1, hidden2) {
   // document.getElementById(shown).style.display='block';
-  document.getElementById(navbar).style.display='none';
-  var x = document.getElementById(shown);
-  var y = document.getElementById(hidden);
-  if (x.style.display === 'none') {
-    x.style.display = 'block';
-    // if (y.style.display === 'block') {
-      y.style.display = 'none'
-    // }
+  document.getElementById(hidden1).style.display='none';
+  document.getElementById(hidden2).style.display='none';
+  document.getElementById(shown).style.display='block';
+
+  if(shown === 'choose-page') {
+      document.getElementById(shown).style.display='flex';
   }
+  // var x = document.getElementById(shown);
+  // var y = document.getElementById(hidden);
+  // if (x.style.display === 'none') {
+    // x.style.display = 'block';
+    // if (y.style.display === 'block') {
+      // y.style.display = 'none'
+    // }
+  // }
   // else {
   //   x.style.display = 'none';
   //   // if (y.style.display === 'none') {
@@ -32,3 +38,7 @@ function myFunction() {
     x.style.display = 'none';
   }
 }
+
+// function backChoose(shown) {
+
+// }

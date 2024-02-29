@@ -12,12 +12,11 @@
 
 
   <div class="btn-container" id="choose-page" style="
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);"
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  "
   >
           <button
             class="btn btn-color-2"
@@ -47,6 +46,9 @@
   <div id="work-page" style="display: none;">
 
     <nav id="desktop-nav">
+      <div class="nav-links">
+        <a href="javascript:show('choose-page', 'casual-page', 'work-page')"> < </a>
+      </div>
       <div class="logo">RA(Theo) Vian</div>
       <div>
         <ul class="nav-links">
@@ -426,6 +428,9 @@
   <div id="casual-page" style="display: none;">
 
     <nav id="desktop-nav">
+      <div class="nav-links">
+        <a href="javascript:show('choose-page', 'casual-page', 'work-page')"> < </a>
+      </div>
       <div class="logo">Vian</div>
       <div>
         <ul class="nav-links">
